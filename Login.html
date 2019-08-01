@@ -16,26 +16,41 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <nav class="navbar1">
-            <p class="heading">Mentor On Demand</p>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+
+    <!-- <div class="container-fluid"> -->
+        <nav class="navbar">
+            <p class="heading"><a href="Login.html" style="text-decoration: none;color: white">Mentor On Demand</p></a> 
+            
+            <form class="form-group">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                       
+                        <input type="text" class="form-control" id="technology" name="technology" placeholder="Technology*">
+                    </div>
+                    <div class="form-group col-md-4">
+                        
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Time*">
+                    </div>
+                    <div class="form-group col-md-2">
+                       
+                        <button class="btn btn-primary my-2 my-sm-0"  type="submit">Search</button>
+                    </div>
+                </div>
             </form>
         </nav>
     </div>
 
     <div class="container-fluid mt">
         <div class="row">
-            <div class="col-5 m-auto">
+            <div class="col-5 mx-auto">
                 <form class="border border-dark rounded bg-light">
                     <fieldset class="m-3">
                         <div class="form-group">
                             <label for="exampleInputEmail1" class="lead">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone
                                 else.</small>
                         </div>
                         <div class="form-group">
@@ -44,12 +59,42 @@
                                 placeholder="Password">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </fieldset>
-                </form>
+                        <div class="row d-flex justify-content-around"><button type="submit"
+                                class="btn btn-primary">Submit</button>
+                            <!-- <div class="btn-group">
+                                <button type="button" class="btn btn-secondary" style="background-color: blueviolet;">Register</button>
+                                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                  <a class="dropdown-item" href="#">Admin</a>
+                                  <a class="dropdown-item" href="#">Mentor</a>
+                                  <a class="dropdown-item" href="#">Users</a>
+                                
+                                </div> -->
+                            <div class="dropdown">
+                                <button class="dropbtn">Register as</button>
+                                <div class="dropdown-content">
+                                    <a href="UserSignUpForm.html">User</a>
+                                    <a href="MentorRegistration.html">Mentor</a>
+                                    <a href="AdminRegistration.html">Admin</a>
+                                </div>
+                            </div>
+                        </div>
             </div>
+
+            </fieldset>
+            </form>
         </div>
     </div>
+
+
+
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
